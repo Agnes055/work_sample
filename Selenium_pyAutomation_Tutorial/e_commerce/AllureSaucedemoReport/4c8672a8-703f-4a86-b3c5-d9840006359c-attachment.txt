@@ -1,0 +1,7 @@
+Browser: 	 edge
+Number of items in the cart: 3
+Assertion passed. Items in the cart are correct.
+Zip code format is correct!
+Entered zip code: 02234
+Total price of items in the cart: Item total: $89.97
+Close Browser

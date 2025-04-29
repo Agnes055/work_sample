@@ -1,0 +1,8 @@
+Browser: 	 edge
+Number of items in the cart: 3
+Assertion passed. Items in the cart are correct.
+Invalid input: first name contains numbers.
+Invalid input: Last name contains numbers.
+Zip code format is not correct!
+Entered zip code: 02
+Close Browser
