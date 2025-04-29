@@ -1,1 +1,26 @@
+name: Run JMeter Without Docker
 
+on:
+  push:
+    paths:
+      - '**.jmx'
+  workflow_dispatch:
+
+jobs:
+  run-jmeter:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Install JMeter
+        run: |
+          JMETER_VERSION=5.6.3
+          wget https://dlcdn.apache.org/jmeter/binaries/apache-jmeter-$JMETER_VERSION.tgz
+          tar -xzf apache-jmeter-$JMETER_VERSION.tgz
+          mv apache-jmeter-$JMETER_VERSION jmeter
+
+      - name: Run JMeter Test
+        run: |
+          ./jmeter/bin/jmeter -n -t Blaze-test-plan.jmx -l results.jtl -e -o report
