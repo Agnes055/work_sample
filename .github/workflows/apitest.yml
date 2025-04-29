@@ -21,4 +21,4 @@ jobs:
       run: npm install -g newman
 
     - name: Run Postman collection
-      run: newman run ./fakestoreproject.postman_collection.json -e ./QA.postman_environment.json
+      run: newman run API_Tutorial/fakestoreproject.postman_collection.json -e API_Tutorial/QA.postman_environment.json
