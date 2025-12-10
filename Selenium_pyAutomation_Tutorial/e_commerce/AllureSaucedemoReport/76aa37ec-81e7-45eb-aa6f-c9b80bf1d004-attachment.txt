@@ -1,0 +1,6 @@
+Browser: 	 chrome
+Number of items in the cart: 3
+Assertion passed. Items in the cart are correct.
+Zip code format is correct!
+Entered zip code: 02234
+Close Browser
