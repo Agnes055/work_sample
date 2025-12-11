@@ -1,14 +1,14 @@
 ## Demoblaze E-Commerce Website Test Plan
 
-## 1. Introduction
+### 1. Introduction
 This test plan covers the functional, UI, and usability testing of the Demoblaze e-commerce website (https://www.demoblaze.com/).
 
-## 2. Objectives
+### 2. Objectives
 - Validate core user workflows: Login, Browse Products, Add to Cart, Place Order.
 - Ensure correct functionality across supported browsers.
 - Identify UI, usability, and functional defects.
 
-## 3. Scope
+### 3. Scope
 ### In Scope
 - User login
 - Product browsing
@@ -21,31 +21,31 @@ This test plan covers the functional, UI, and usability testing of the Demoblaze
 - Security testing beyond basic checks
 - Backend database validation
 
-## 4. Test Items
+### 4. Test Items
 - Web UI
 - Navigation
 - Forms validation
 - Modal dialogues
 
-## 5. Test Approach
+### 5. Test Approach
 - Manual functional testing
 - Automation Testing using playwright
 - Exploratory testing
 
-## 6. Test Environment
+### 6. Test Environment
 - Browser: Chromium, Firefox, Webkit
 - OS: Windows
 - URL: https://www.demoblaze.com/
 
-## 7. Risks
+### 7. Risks
 - Slow response time
 - Unstable alert pop-ups
 
-## 8. Entry Criteria
+### 8. Entry Criteria
 - Application is deployed
 - Stable test environment
 
-## 9. Exit Criteria
+### 9. Exit Criteria
 - All test cases passed especially the critical ones
 
 ## Test Scenarios for Demoblaze E-Commerce Website
