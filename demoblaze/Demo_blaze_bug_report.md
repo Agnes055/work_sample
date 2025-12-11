@@ -1,4 +1,4 @@
-# Sample Bug Reports – Demoblaze
+# Bug Reports for Demoblaze
 
 ---
 
@@ -6,7 +6,7 @@
 **Title:** Login modal does not close after successful login  
 **Severity:** Medium  
 **Priority:** High  
-**Environment:** Chrome, Windows 10  
+**Environment:** Chrome, Firefox, Edge, Windows 11  
 **Steps to Reproduce:**  
 1. Open Demoblaze  
 2. Click Login  
