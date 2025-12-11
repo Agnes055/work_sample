@@ -1,4 +1,4 @@
-#Demoblaze E-Commerce Website Test Plan
+##Demoblaze E-Commerce Website Test Plan
 
 ## 1. Introduction
 This test plan covers the functional, UI, and usability testing of the Demoblaze e-commerce website (https://www.demoblaze.com/).
@@ -48,7 +48,7 @@ This test plan covers the functional, UI, and usability testing of the Demoblaze
 ## 9. Exit Criteria
 - All test cases passed especially the critical ones
 
-#Test Scenarios for Demoblaze E-Commerce Website
+##Test Scenarios for Demoblaze E-Commerce Website
 
 ### 1. Login Module
 - Login with valid credentials
