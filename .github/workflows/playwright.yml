@@ -26,14 +26,48 @@ jobs:
         working-directory: demoblaze
         run: npx playwright install --with-deps
 
+      # Install Allure reporter for Playwright
+      - name: Install Allure Reporter
+        working-directory: demoblaze
+        run: npm i -D allure-playwright
+
+      # Run Playwright tests with Allure output
       - name: Run tests
         working-directory: demoblaze
-        run: npx playwright test
+        run: npx playwright test --reporter=line,allure-playwright
 
+      # Install allurectl for report generation
+      - name: Install allurectl
+        uses: allure-framework/allurectl-action@v1
+
+      # Generate Allure report
+      - name: Generate Allure Report
+        if: always()
+        working-directory: demoblaze
+        run: allurectl generate allure-results --clean
+
+      # Upload Playwright HTML Report
       - name: Upload HTML report
         if: always()
         uses: actions/upload-artifact@v4
         with:
           name: playwright-report
-          path: demo/playwright-report
+          path: demoblaze/playwright-report
+
+      # Upload Allure raw results
+      - name: Upload Allure Results
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: allure-results
+          path: demoblaze/allure-results
+
+      # Upload generated Allure HTML report
+      - name: Upload Allure Report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: allure-report
+          path: demoblaze/allure-report
+
 
