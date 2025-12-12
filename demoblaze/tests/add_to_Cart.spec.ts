@@ -3,7 +3,7 @@ import { CartPage } from '../pages/cartPage';
 import { homePage } from '../pages/homePage';
 import { OrderPlacement } from '../pages/placeOrderPage';
 import { placeorder } from '../utils_data/test_data';
-import { addProduct } from '../pages/productpage';
+import { addProduct } from '../pages/productPage';
 
 // Tests 
 // •	Add items to cart
